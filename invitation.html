@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>초대장</title>
+
+</head>
+
+<body>
+
+    <div class="welcome-container">
+        <h1>환영합니다</h1>
+        <h2>홈 스윗 홈</h2>
+
+        <div class="map-placeholder">
+            여기 지도 들어갈 자리
+        </div>
+    </div>
+
+</body>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+    .welcome-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 70vh;
+        text-align: center;
+        width: 100%;
+    }
+
+    .welcome-container h1 {
+        font-size: 36px;
+        font-weight: 600;
+        margin: 0;
+        line-height: 1.4;
+    }
+
+    .welcome-container h2 {
+        font-size: 28px;
+        font-weight: 400;
+        margin: 8px 0 24px;
+        letter-spacing: 6px;
+    }
+
+    .map-placeholder {
+        width: 80%;
+        max-width: 600px;
+        height: 300px;
+        background-color: #f0f0f0;
+        border: 2px dashed #ccc;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #888;
+        font-size: 18px;
+        margin-top: 50px;
+    }
+
+    @media (max-width: 767px) {
+        body {
+            background-color: #fefefe;
+            font-size: 14px;
+        }
+
+        .container {
+            padding: 10px;
+            flex-direction: column;
+        }
+    }
+</style>
+
+</html>

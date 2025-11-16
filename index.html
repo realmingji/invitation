@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>초대장</title>
+
+</head>
+
+<body>
+
+    <div class="mainheader">초대합니다</div>
+
+    <div class="form-wrapper">
+        <div class="form-row">
+            <label for="name">당신의 이름은?</label>
+            <input type="text" id="name" placeholder="OOO">
+        </div>
+
+        <div class="form-row">
+            <label for="birth">집주인 생일은?</label>
+            <input id="dateInput" type="date" placeholder="YYYY-MM-DD">
+        </div>
+
+        <button class="form-button" onclick="location.href='invitation.html'">초대장 보기</button>
+    </div>
+
+</body>
+<style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: white;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainheader {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  min-height: 300px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.form-row label {
+  font-weight: bold;
+  font-size: 18px;
+  width: 130px;
+  text-align: right;
+}
+
+.form-row input {
+  font-size: 16px;
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-button {
+  margin-top: 20px;
+  padding: 14px 40px;
+  background-color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.form-button:hover {
+  background-color: #e4e4e4;
+}
+
+@media (max-width: 767px) {
+  .mainheader {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+
+  .form-wrapper {
+    width: 90%;
+    gap: 18px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .form-row label {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .form-row input {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .form-button {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</html>
