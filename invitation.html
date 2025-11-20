@@ -2,7 +2,7 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>초대장</title>
 
 </head>
@@ -13,9 +13,13 @@
         <h1>환영합니다</h1>
         <h2>홈 스윗 홈</h2>
 
-        <div class="map-placeholder">
-            여기 지도 들어갈 자리
+        <div class="map-placeholder" style="width: 30%; height: 50%  ">
+            <img id="myimg" src="/스크린샷 2025-11-21 000345.png" />
+            <p class="map-address"></p>
+            <p class="map-address"></p>
+            <p class="map-address">경상북도 구미시 인동18길 26-21 오리온 205호</p>
         </div>
+
     </div>
 
 </body>
@@ -58,18 +62,31 @@
     }
 
     .map-placeholder {
-        width: 80%;
+        width: 100%;
         max-width: 600px;
-        height: 300px;
-        background-color: #f0f0f0;
-        border: 2px dashed #ccc;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #888;
-        font-size: 18px;
-        margin-top: 50px;
+        /* 데스크탑 기준 제한 */
+        margin: 0 auto;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    #myimg {
+        width: 100%;
+        /* 부모 너비만큼 채움 */
+        height: auto;
+        /* 비율 유지 */
+        border-radius: 12px;
+        /* 선택 사항: 둥근 모서리 */
+        display: block;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        /* 선택: 입체감 */
+    }
+
+    .map-address {
+        margin-top: 30px;
+        /* 🔥 여기서 간격 조절 */
+        font-size: 20px;
+        color: #333;
     }
 
     @media (max-width: 767px) {
